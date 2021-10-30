@@ -1,0 +1,32 @@
+KLONLAMA-CLONE
+* Github'a atilmis olan Frameworkumuzun repository URLsini kopyaya aliyoruz
+* Intellij Menulerden; File-new-Project from Version Control.. seciliyor
+* Kopyaya aldigimiz repository URL'sini, "URL :" etiketli inbox'a yapistirip "clone" tikliyoruz
+
+Framework klonlandi ve acildi sira terminalde ki islemlere geldi
+
+ TERMINAL
+* terminal'i aciyoruz ve sirasiyla asagidaki "git"le baslayan ifadeleri giriyoruz
+
+* BRANCH GORME=........\concortHotel-TEAM-4> git branch //*master
+
+* BRANCH OLUSTURMA=.......\concortHotel-TEAM-4> git branch oner //oner/*master
+
+* BRANCH DEGISTIRME=.............\concortHotel-TEAM-4> git checkout oner //*oner/master
+
+* "master" ile "oner"i esitleme=.....\concortHotel-TEAM-4> git merge master
+
+* Su anda kendi branch'imizda calisabiliriz, kodlarimizi yazabilir, run edebiliriz. calismamiz bitince
+
+PUSH ETME
+* ..........\concortHotel-TEAM-4> git add .
+*............\concortHotel-TEAM-4> git commit -m "birincicommit"//tirnak ici size kalmis
+*............\concortHotel-TEAM-4> git push --set-upstream origin oner
+("--set-upstream origin oner" kismi sadece ilk PUSH da yaziliyor, github repositoryde de "oner" diye bir branch olusturuyor)
+
+*LOG IN kutusu acilabilir--username(email)--password isteyebilir(bende istemedi)
+
+
+
+
+

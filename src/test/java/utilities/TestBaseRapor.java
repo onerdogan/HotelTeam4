@@ -26,9 +26,9 @@ public abstract class TestBaseRapor {
         // İstediğiniz bilgileri buraya ekeyebiliyorsunuz.
         extentReports.setSystemInfo("Enviroment","QA");
         extentReports.setSystemInfo("Browser", ConfigReader.getProperty("browser")); // chrome, firefox
-        extentReports.setSystemInfo("Automation Engineer", "Mehmet");
-        extentHtmlReporter.config().setDocumentTitle("window handle testi");
-        extentHtmlReporter.config().setReportName("handle testi");
+        extentReports.setSystemInfo("Automation Engineer", "team4");
+        extentHtmlReporter.config().setDocumentTitle("concort testi");
+        extentHtmlReporter.config().setReportName("Hotel testi");
     }
     // Her test methodundan sonra eğer testte hata varsa, ekran görüntüsü alıp rapora ekliyor
     @AfterMethod(alwaysRun = true)
@@ -41,7 +41,7 @@ public abstract class TestBaseRapor {
         } else if (result.getStatus() == ITestResult.SKIP) { // eğer test çalıştırılmadan geçilmezse
             extentTest.skip("Test Case is skipped: " + result.getName()); // Ignore olanlar
         }
-        System.out.println("deneme");
+
         Driver.closeDriver();
     }
     // Raporlandırmayı sonlandırmak icin
