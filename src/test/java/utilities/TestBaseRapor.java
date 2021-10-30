@@ -41,6 +41,7 @@ public abstract class TestBaseRapor {
         } else if (result.getStatus() == ITestResult.SKIP) { // eğer test çalıştırılmadan geçilmezse
             extentTest.skip("Test Case is skipped: " + result.getName()); // Ignore olanlar
         }
+        System.out.println("deneme");
         Driver.closeDriver();
     }
     // Raporlandırmayı sonlandırmak icin
